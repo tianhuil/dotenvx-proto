@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "dotenvx run -f .env.${VERCEL_ENV} -- next dev --turbopack",
-    "build": "dotenvx run -f .env.${VERCEL_ENV} -- next build",
-    "start": "dotenvx run -f .env.${VERCEL_ENV} -- next start",
+    "dev": "dotenvx run -- next dev --turbopack",
+    "build": "dotenvx run -- next build",
+    "start": "dotenvx run -- next start",
     "lint": "next lint"
   },
   "dependencies": {
