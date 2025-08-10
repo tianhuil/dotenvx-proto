@@ -4,22 +4,25 @@
   "private": true,
   "scripts": {
     "dev": "dotenvx run -f .env.${VERCEL_ENV} --overload -- next dev --turbopack",
-    "build": "dotenvx run -f .env.${VERCEL_ENV} --overload -- next build",
+    "build": "bun run delete-env && dotenvx run -f .env.${VERCEL_ENV} --overload -- next build",
     "start": "dotenvx run -f .env.${VERCEL_ENV} --overload -- next start",
+    "delete-env": "bun run script/delete-env.ts",
     "lint": "next lint"
   },
   "dependencies": {
     "@dotenvx/dotenvx": "^1.48.4",
+    "@types/glob": "^9.0.0",
+    "glob": "^11.0.3",
     "next": "15.4.6",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
