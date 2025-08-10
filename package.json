@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "dotenvx run -f .env.${VERCEL_ENV} --overload -- next dev --turbopack",
-    "build": "bun run delete-env && dotenvx run -f .env.${VERCEL_ENV} --overload -- next build",
+    "build": "dotenvx run -f .env.${VERCEL_ENV} --overload -- next build",
     "start": "dotenvx run -f .env.${VERCEL_ENV} --overload -- next start",
     "delete-env": "bun run script/delete-env.ts",
     "lint": "next lint"
