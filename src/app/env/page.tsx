@@ -1,5 +1,7 @@
 import type React from 'react';
 
+const dntenvxEnv = process.env.DOTENVX_ENV;
+
 const EnvPage: React.FC = () => {
   return (
     <div className="container mx-auto mt-8">
@@ -11,7 +13,7 @@ const EnvPage: React.FC = () => {
         VERCEL_ENV: <code>{process.env.VERCEL_ENV}</code>
       </p>
       <p>
-        DOTENVX_ENV: <code>{process.env.DOTENVX_ENV}</code>
+        DOTENVX_ENV: <code>{dntenvxEnv}</code>
       </p>
       <p>
         SAMPLE_SECRET: <code>{process.env.SAMPLE_SECRET}</code>
