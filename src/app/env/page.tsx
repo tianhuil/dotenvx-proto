@@ -5,7 +5,7 @@ const dntenvxEnv = process.env.DOTENVX_ENV;
 const EnvPage: React.FC = () => {
   return (
     <div className="container mx-auto mt-8">
-      <h2 className="text-2xl font-bold">Environment</h2>
+      <h2 className="text-2xl font-bold">Environment tweak</h2>
       <p>
         NODE_ENV: <code>{process.env.NODE_ENV}</code>
       </p>
