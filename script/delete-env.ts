@@ -20,7 +20,12 @@ for (const file of envFiles) {
     console.log(`Keeping: ${file}`);
     continue;
   }
-  
+
+  if (file === '.env.keys') {
+    console.log(`Keeping: ${file}`);
+    continue;
+  }
+
   const filePath = path.join(envDir, file);
   await fs.unlink(filePath);
   console.log(`Deleted: ${file}`);
