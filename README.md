@@ -1,5 +1,7 @@
 # dotenvx nextjs demo
 
+> The issue may be resolved by this: https://dotenvx.com/blog/2026/02/17/dotenvx-nextjs.html
+
 This is a prototype for using dotenvx and nextjs.  The learnings were [documented here](https://github.com/dotenvx/dotenvx/issues/616#issuecomment-3172568761), reproduced below:
 
 Hey @ChristoRibeiro: I had this issue and investigated.  I was getting the same error and doing the below solved it for me.
